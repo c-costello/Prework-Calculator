@@ -20,28 +20,29 @@ namespace CalculatorApp
                 string secondNumStr = Console.ReadLine();
                 double firstNum = double.Parse(firstNumStr);
                 double secondNum = double.Parse(secondNumStr);
+                //switch statement
+                //define switchCase
+                string caseSwitch = whichOpp;
+                switch (caseSwitch)
+                {
+                    case "+":
+                        Add(firstNum, secondNum);
+                        break;
+                    case "-":
+                        Subtract(firstNum, secondNum);
+                        break;
+                    case "*":
+                        Multiply(firstNum, secondNum);
+                        break;
+                    case "/":
+                        Divide(firstNum, secondNum);
+                        break;
+                    default:
+                        Console.WriteLine("Invalid Input");
+                        break;
 
-                //Conditional that determines which math function is called
-                if (whichOpp == "+")
-                {
-                    Add(firstNum, secondNum);
                 }
-                else if (whichOpp == "-")
-                {
-                    Subtract(firstNum, secondNum);
-                }
-                else if (whichOpp == "*")
-                {
-                    Multiply(firstNum, secondNum);
-                }
-                else if (whichOpp == "/")
-                {
-                    Divide(firstNum, secondNum);
-                }
-                else
-                {
-                    Console.WriteLine("Invalid Input");
-                }
+                
                 Console.Write("Begin Again? y/n: ");
                 string resp = Console.ReadLine();
                 //conditional that breaks the loop if the user is done doing math
