@@ -20,6 +20,7 @@ namespace CalculatorApp
                 string secondNumStr = Console.ReadLine();
                 double firstNum = double.Parse(firstNumStr);
                 double secondNum = double.Parse(secondNumStr);
+
                 //switch statement
                 //define switchCase
                 string caseSwitch = whichOpp;
