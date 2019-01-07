@@ -15,6 +15,7 @@ namespace CalculatorApp
                        
             Add(firstNum, secondNum);
             Subtract(firstNum, secondNum);
+            Multiply(firstNum, secondNum);
             Console.ReadLine();
         }
 
@@ -22,13 +23,19 @@ namespace CalculatorApp
         public static void Add(int x, int y)
         {
             int sum = x + y;
-            Console.Write("Sum = " + sum);
+            Console.WriteLine("Sum = " + sum);
         }
-        //Declases subtract function with two arguments
+        //Declares subtract function with two arguments
         public static void Subtract(int x, int y)
         {
             int difference = x - y;
-            Console.Write("Difference = " + difference);
+            Console.WriteLine("Difference = " + difference);
+        }
+        //Declares multiply function with two arguments
+        public static void Multiply(int x, int y)
+        {
+            int product = x * y;
+            Console.WriteLine("Product = " + product);
         }
 
     }
