@@ -11,6 +11,7 @@ namespace CalculatorApp
             //loop that re-runs code until user is done doing math
             while ( runn == true)
             {
+                //code block that captures user input
                 Console.Write("First Number: ");
                 string firstNumStr = Console.ReadLine();
                 Console.Write("Operator (+ , - , * , / ): ");
