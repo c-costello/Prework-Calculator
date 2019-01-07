@@ -14,13 +14,22 @@ namespace CalculatorApp
             int secondNum = Convert.ToInt32(secondNumStr);
                        
             Add(firstNum, secondNum);
+            Subtract(firstNum, secondNum);
+            Console.ReadLine();
         }
+
         //Declares add function with two arguments
         public static void Add(int x, int y)
         {
             int sum = x + y;
             Console.Write("Sum = " + sum);
-            Console.ReadLine();
-        } 
+        }
+        //Declases subtract function with two arguments
+        public static void Subtract(int x, int y)
+        {
+            int difference = x - y;
+            Console.Write("Difference = " + difference);
+        }
+
     }
 }
